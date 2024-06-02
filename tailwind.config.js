@@ -10,6 +10,28 @@ module.exports = {
     colors: {
       dark: "#343a40",
       light: "#f8f9fa",
+      link: {
+        light: "#FFA5A5",
+      },
+    },
+    fontSize: {
+      base: "15px",
+      lg: [
+        "3.5rem",
+        {
+          lineHeight: "1.25",
+          letterSpacing: "-0.1rem",
+          fontWeight: "300",
+        },
+      ],
+      xl: [
+        "4rem",
+        {
+          lineHeight: 1.25,
+          letterSpacing: "-0.1rem",
+          fontWeight: "300",
+        },
+      ],
     },
     extend: {
       backgroundImage: {

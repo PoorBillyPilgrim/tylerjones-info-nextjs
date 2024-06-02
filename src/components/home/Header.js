@@ -17,8 +17,8 @@ export default function Header() {
 
   const onClick = () => setTheme(swap("light", "dark"));
   return (
-    <nav className="pt-[15px] w-full px-[10px] sm:px-0">
-      <ul className="flex items-center gap-8">
+    <nav className="pt-6 pb-20 w-full">
+      <ul className="flex items-center gap-6">
         <li className="mr-auto">
           <Link href="/">
             <strong>Tyler Jones</strong>

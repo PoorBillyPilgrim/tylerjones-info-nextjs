@@ -15,23 +15,29 @@
     --background-end-rgb: 0, 0, 0;
   }
 }
+
+html {
+  font-size: 62.5%;
+}
+
 html.dark {
 
   a:hover {
-    color: #ff8080
+    color: #ff8080;
   }
 }
 
 html.light {
 
   a:hover {
-    color: #b33241
+    color: #b33241;
   }
 }
 
 
 body {
   color: rgb(var(--foreground-rgb));
+  font-size: 1.5rem;
 }
 
 @layer utilities {
