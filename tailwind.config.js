@@ -9,6 +9,7 @@ module.exports = {
   theme: {
     colors: {
       dark: "#343a40",
+      darker: "#22262a",
       light: "#f8f9fa",
       link: {
         light: "#FFA5A5",
@@ -16,6 +17,14 @@ module.exports = {
     },
     fontSize: {
       base: "15px",
+      md: [
+        "3rem",
+        {
+          lineHeight: "1.3",
+          letterSpacing: "-0.1rem",
+          fontWeight: "300",
+        },
+      ],
       lg: [
         "3.5rem",
         {

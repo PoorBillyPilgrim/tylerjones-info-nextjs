@@ -13,10 +13,10 @@ export default function Home() {
       <main className="flex flex-col items-center justify-between">
         <Hero />
         <hr className="mt-12 border-t-1 border-[#E1E1E1] w-full" />
-      </main>
 
-      <Projects />
-      <Notes />
+        <Projects />
+        <Notes />
+      </main>
 
       <Footer />
     </Fragment>

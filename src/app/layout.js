@@ -7,8 +7,7 @@ const raleway = Raleway({ subsets: ["latin"] });
 
 export const metadata = {
   title: "tylerjones.info",
-  description:
-    "Portfolio website detailing projects for Tyler Jones, a full stack web developer.",
+  description: "Portfolio website for Tyler Jones, a full stack web developer.",
 };
 
 export default function RootLayout({ children }) {

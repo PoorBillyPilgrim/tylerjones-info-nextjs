@@ -6,6 +6,7 @@ export default function Hero() {
   return (
     <section className="flex flex-col items-center lg:flex-row">
       <Image
+        alt="Picture of Tyler Jones playing bass"
         src="/images/playing-bass-color.png"
         height={500}
         width={500}
@@ -14,7 +15,7 @@ export default function Hero() {
 
       <div className="text-center lg:text-left lg:pl-4">
         <header>
-          <h1 className="text-xl">Hi, I'm Tyler Jones.</h1>
+          <h1 className="text-xl">Hi, I&apos;m Tyler Jones.</h1>
         </header>
 
         <p className="pb-2">

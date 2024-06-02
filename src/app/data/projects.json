@@ -1,0 +1,62 @@
+[
+  {
+    "id": 1,
+    "title": "Kurt Vonnegut API",
+    "date": "2020",
+    "description": "A RESTful API for Kurt Vonnegut's bibliography",
+    "keywords": ["Node.js", "Express", "MongoDB", "EJS"],
+    "imgSrc": "/images/projects/kvapi.jpg",
+    "repo": "https://github.com/PoorBillyPilgrim/kurt-vonnegut-api",
+    "url": "https://kurtvonnegutapi.com"
+  },
+  {
+    "id": 2,
+    "title": "GT Library retroTECH TwitterBot",
+    "date": "2020",
+    "description": "Twitter bot that tweets image from Georgia Tech Library's retroTECH collection daily",
+    "keywords": ["Node.js", "Twitter API"],
+    "imgSrc": "/images/projects/twitterbot.jpg",
+    "repo": "https://github.com/PoorBillyPilgrim/gtlibrary-retrotech-twitterbot",
+    "url": "https://github.com/PoorBillyPilgrim/gtlibrary-retrotech-twitterbot"
+  },
+  {
+    "id": 3,
+    "title": "Clough Digital Art Crawl Digital Exhibit",
+    "date": "2021",
+    "description": "Interactive digital gallery prototype built for the Georgia Tech Library's bi-annual Clough Art Crawl",
+    "keywords": ["Node.js", "Express", "jQuery", "OpenSeadragon"],
+    "imgSrc": "/images/projects/artcrawl.png",
+    "repo": "https://github.com/PoorBillyPilgrim/artcrawl-digital-exhibit/tree/square-grid",
+    "url": "http://art-crawl-exhibit.herokuapp.com"
+  },
+  {
+    "id": 4,
+    "title": "tylerjones.info",
+    "date": "2022 - present",
+    "description": "Personal portfolio and blog",
+    "keywords": ["Next.js", "Tailwind CSS"],
+    "imgSrc": "/images/projects/playing-bass-color.png",
+    "repo": "https://github.com/PoorBillyPilgrim/tylerjones-info-nextjs",
+    "url": "https://tylerjones.info"
+  },
+  {
+    "id": 5,
+    "title": "Pixel Art Institute of Chicago",
+    "date": "2022",
+    "description": "Pixel art generator for images made available by the Art Institute of Chicago",
+    "keywords": ["Vue.js", "IIIF", "OpenSeadragon"],
+    "imgSrc": "https://raw.githubusercontent.com/PoorBillyPilgrim/iiif-pixel-art/main/src/assets/logo.png",
+    "repo": "https://github.com/PoorBillyPilgrim/iiif-pixel-art",
+    "url": "https://poorbillypilgrim.github.io/iiif-pixel-art/#/"
+  },
+  {
+    "id": 6,
+    "title": "BiblioBoard",
+    "date": "2022 - present",
+    "description": "BiblioBoard is a geolocated platform for public and academic libraries that features unlimited, simultaneous use multimedia content.",
+    "keywords": ["React", "Java", "Kotlin"],
+    "imgSrc": "/images/projects/bb.png",
+    "repo": "",
+    "url": "https://library.biblioboard.com"
+  }
+]
