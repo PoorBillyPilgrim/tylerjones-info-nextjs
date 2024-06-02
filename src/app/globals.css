@@ -15,6 +15,20 @@
     --background-end-rgb: 0, 0, 0;
   }
 }
+html.dark {
+
+  a:hover {
+    color: #ff8080
+  }
+}
+
+html.light {
+
+  a:hover {
+    color: #b33241
+  }
+}
+
 
 body {
   color: rgb(var(--foreground-rgb));
@@ -24,8 +38,4 @@ body {
   .text-balance {
     text-wrap: balance;
   }
-}
-
-a:hover {
-  color: #ff8080
 }

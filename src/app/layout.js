@@ -1,7 +1,7 @@
-import { Inter, Raleway } from "next/font/google";
+import { ThemeProvider } from "next-themes";
+import { Raleway } from "next/font/google";
 import "./globals.css";
 
-const inter = Inter({ subsets: ["latin"] });
 const raleway = Raleway({ subsets: ["latin"] });
 
 export const metadata = {
@@ -11,8 +11,12 @@ export const metadata = {
 
 export default function RootLayout({ children }) {
   return (
-    <html lang="en" className="dark">
-      <body className={`${raleway.className} dark:bg-dark`}>{children}</body>
+    <html lang="en" className="dark" suppressHydrationWarning>
+      <body
+        className={`${raleway.className} dark:bg-dark dark:text-light bg-light text-[black]`}
+      >
+        <ThemeProvider attribute="class">{children}</ThemeProvider>
+      </body>
     </html>
   );
 }
