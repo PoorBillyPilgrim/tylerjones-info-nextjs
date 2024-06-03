@@ -31,10 +31,10 @@ export default function Header() {
           <Link href="/resume/tyler-jones-resume.pdf">resume</Link>
         </li>
         <li>
-          <Link href="#projects">projects</Link>
+          <Link href="/#projects">projects</Link>
         </li>
         <li>
-          <Link href="#notes">notes</Link>
+          <Link href="/#notes">notes</Link>
         </li>
         <li className="h-[20px]">
           <button onClick={onClick}>

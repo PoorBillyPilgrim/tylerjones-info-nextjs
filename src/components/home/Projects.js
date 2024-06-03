@@ -1,5 +1,5 @@
 import { reverse, map } from "ramda";
-import projects from "@/app/data/projects.json";
+import projects from "@/data/projects.json";
 
 import Project from "./Project";
 
