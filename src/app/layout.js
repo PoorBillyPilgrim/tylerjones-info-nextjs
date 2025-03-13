@@ -1,4 +1,10 @@
-import { ThemeProvider } from "next-themes";
+// import { ThemeProvider } from "next-themes";
+import * as React from "react";
+import { AppRouterCacheProvider } from "@mui/material-nextjs/v15-appRouter";
+import { ThemeProvider } from "@mui/material/styles";
+import CssBaseline from "@mui/material/CssBaseline";
+import InitColorSchemeScript from "@mui/material/InitColorSchemeScript";
+import { theme } from "../theme";
 import { Raleway } from "next/font/google";
 import "./globals.css";
 import "@fortawesome/fontawesome-svg-core/styles.css";
@@ -17,13 +23,17 @@ export default function RootLayout({ children }) {
   return (
     <html lang="en" className="dark" suppressHydrationWarning>
       <body
-        className={`${raleway.className} dark:bg-dark dark:text-light bg-light text-[black] container mx-auto px-8 lg:max-w-[960px] flex flex-col h-screen`}
+        className={`${raleway.className}  dark:text-light text-[black] container mx-auto px-8 lg:max-w-[960px] flex flex-col h-screen`}
       >
-        <ThemeProvider attribute="class">
-          <Header />
-          {children}
-          <Footer />
-        </ThemeProvider>
+        <AppRouterCacheProvider options={{ enableCssLayer: true }}>
+          <ThemeProvider theme={theme} defaultMode="dark">
+            <CssBaseline />
+            <InitColorSchemeScript attribute="class" />
+            <Header />
+            {children}
+            <Footer />
+          </ThemeProvider>
+        </AppRouterCacheProvider>
       </body>
     </html>
   );

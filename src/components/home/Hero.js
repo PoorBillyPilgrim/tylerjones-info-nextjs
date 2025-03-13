@@ -19,7 +19,7 @@ export default function Hero() {
         </header>
 
         <p className="pb-2">
-          I work in libraries, and I enjoy coding. Check out my{" "}
+          I code for libraries. Check out my{" "}
           <Link
             className="text-link-light"
             href="/resume/tyler-jones-resume.pdf"

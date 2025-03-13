@@ -20,7 +20,7 @@ html {
   font-size: 62.5%;
 }
 
-html.dark {
+/* html.dark {
 
   a:hover {
     color: #ff8080;
@@ -32,7 +32,7 @@ html.light {
   a:hover {
     color: #b33241;
   }
-}
+} */
 
 
 body {

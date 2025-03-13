@@ -1,24 +1,26 @@
 "use client";
-import { useCallback, useEffect, useState } from "react";
-import { useTheme } from "next-themes";
+import { useEffect, useState } from "react";
+import { useColorScheme } from "@mui/material/styles";
 
 import Image from "next/image";
 import Link from "next/link";
 
 export default function Header() {
-  const { theme, setTheme } = useTheme();
+  const { mode, setMode } = useColorScheme();
+  // const { theme, setTheme } = useTheme();
   const [imgSrc, setImgSrc] = useState("/images/sun-32x32.png");
-  const swap = useCallback(
-    (dark, light) => (theme === "dark" ? dark : light),
-    [theme]
-  );
 
   useEffect(() => {
-    const imgSrc = swap("/images/sun-32x32.png", "/images/moon-32x32.png");
+    const imgSrc =
+      mode === "dark" ? "/images/sun-32x32.png" : "/images/moon-32x32.png";
     setImgSrc(imgSrc);
-  }, [theme, swap]);
+  }, [mode]);
 
-  const onClick = () => setTheme(swap("light", "dark"));
+  const onClick = mode => setMode(mode === "dark" ? "light" : "dark");
+  if (!mode) {
+    return null;
+  }
+
   return (
     <nav className="pt-6 pb-20 w-full">
       <ul className="flex items-center gap-6">
@@ -37,7 +39,7 @@ export default function Header() {
           <Link href="/#notes">notes</Link>
         </li>
         <li className="h-[20px]">
-          <button onClick={onClick}>
+          <button onClick={() => onClick(mode)}>
             <Image
               src={imgSrc}
               alt="Emoji representing toggle for dark and light theme"

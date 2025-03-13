@@ -7,7 +7,7 @@ import { notBlank } from "@/util/general";
 
 export default function Project({ project }) {
   return (
-    <article className="flex flex-col mb-12 rounded shadow-[0_5px_10px_rgba(34,38,42,0.5)] dark:bg-darker dark:text-light bg-light text-[black]">
+    <article className="flex flex-col mb-12 rounded shadow-[0_5px_10px_rgba(34,38,42,0.5)] dark:text-light text-[black]">
       <div className="sm:h-[300px] md:h-[360px] lg:h-[300px]">
         <Link href={project.url} target="_blank">
           <Image
