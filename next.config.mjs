@@ -2,7 +2,7 @@ import withMDX from "@next/mdx";
 
 /** @type {import('next').NextConfig} */
 const nextConfig = {
-  // basePath: "/tylerjones-info-nextjs",
+  basePath: "/tylerjones-info-nextjs",
   images: {
     unoptimized: true,
   },
