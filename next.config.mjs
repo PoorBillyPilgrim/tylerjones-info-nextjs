@@ -5,7 +5,7 @@ const isDev = process.env.NODE_ENV === "development";
 /** @type {import('next').NextConfig} */
 const nextConfig = {
   output: "export",
-  basePath: "",
+  basePath: isDev ? "" : "/tylerjones-info-nextjs",
   // Configure `pageExtensions` to include MDX files
   pageExtensions: ["js", "jsx", "mdx", "ts", "tsx"],
   images: {
