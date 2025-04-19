@@ -2,8 +2,7 @@ import withMDX from "@next/mdx";
 
 /** @type {import('next').NextConfig} */
 const nextConfig = {
-  output: "export", // enables static page generation
-  basePath: "/tylerjones-info-nextjs",
+  // basePath: "/tylerjones-info-nextjs",
   images: {
     unoptimized: true,
   },
