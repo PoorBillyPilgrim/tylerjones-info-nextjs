@@ -34,7 +34,7 @@
     "title": "tylerjones.info",
     "date": "2022 - present",
     "description": "Personal portfolio and blog",
-    "keywords": ["Next.js", "Tailwind CSS"],
+    "keywords": ["Next.js", "React", "Material UI"],
     "imgSrc": "/images/projects/playing-bass-color.png",
     "repo": "https://github.com/PoorBillyPilgrim/tylerjones-info-nextjs",
     "url": "https://tylerjones.info"

@@ -1,13 +1,15 @@
 "use client";
-import { useEffect, useState } from "react";
+import React, { useEffect, useState } from "react";
 import { useColorScheme } from "@mui/material/styles";
 
 import Image from "next/image";
 import Link from "next/link";
 
+import Box from "@mui/material/Box";
+import Stack from "@mui/material/Stack";
+
 export default function Header() {
   const { mode, setMode } = useColorScheme();
-  // const { theme, setTheme } = useTheme();
   const [imgSrc, setImgSrc] = useState("/images/sun-32x32.png");
 
   useEffect(() => {
@@ -17,13 +19,24 @@ export default function Header() {
   }, [mode]);
 
   const onClick = mode => setMode(mode === "dark" ? "light" : "dark");
-  if (!mode) {
-    return null;
-  }
 
   return (
-    <nav className="pt-6 pb-20 w-full">
-      <ul className="flex items-center gap-6">
+    <Box
+      component="nav"
+      sx={{
+        width: "100%",
+        pt: "1.5rem",
+        pb: "5rem",
+      }}
+    >
+      <Stack
+        component="ul"
+        direction="row"
+        spacing={2}
+        sx={{
+          alignItems: "center",
+        }}
+      >
         <li className="mr-auto">
           <Link href="/">
             <strong>Tyler Jones</strong>
@@ -35,18 +48,20 @@ export default function Header() {
         <li>
           <Link href="/#projects">projects</Link>
         </li>
-        <li className="h-[20px]">
-          <button onClick={() => onClick(mode)}>
-            <Image
-              src={imgSrc}
-              alt="Emoji representing toggle for dark and light theme"
-              width={20}
-              height={20}
-              className="nav-btn"
-            />
-          </button>
-        </li>
-      </ul>
-    </nav>
+        {mode && (
+          <li className="h-[20px]">
+            <button onClick={() => onClick(mode)}>
+              <Image
+                src={imgSrc}
+                alt="Emoji representing toggle for dark and light theme"
+                width={20}
+                height={20}
+                className="nav-btn"
+              />
+            </button>
+          </li>
+        )}
+      </Stack>
+    </Box>
   );
 }
